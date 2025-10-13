@@ -1,17 +1,16 @@
 const moodLinks = {
-    Home: "ecamp.html",
-    Joy: "joy.html",
-    Proud: "proud.html",
-    Motivated: "motivated.html",
-    Amazed: "amazed.html",
-    Calm: "calm.html",
-    Okay: "okay.html",
-    Bored: "bored.html",
-    Lazy: "lazy.html",
-    Sad: "sad.html",
-    Guilty: "guilty.html",
-    Angry: "angry.html",
-    Disappointed: "disappointed.html"
+    Joy: "moods_positive_joy.html",
+    Proud: "moods_positive_proud.html",
+    Motivated: "moods_positive_motivated.html",
+    Amazed: "moods_positive_amazed.html",
+    Calm: "moods_neutral_calm.html",
+    Okay: "moods_neutral_okay.html",
+    Bored: "moods_neutral_bored.html",
+    Lazy: "moods_neutral_lazy.html",
+    Sad: "moods_negative_sad.html",
+    Guilty: "moods_negative_guilty.html",
+    Angry: "moods_negative_angry.html",
+    Disappointed: "moods_negative_disappointed.html"
 };
 
 Object.keys(moodLinks).forEach(mood => {
