@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodview - Unmotivated</title>
+        <link rel="stylesheet" href="ecamp.css">
+    </head>
+    <body>
+        <nav class="titleSlogan">
+            <h1 class="brand">Moodview</h1>
+            <p>Your mood in a different view.</p>
+        </nav>
+
+        <div class="moods_neutral" style="text-align: center;">
+            <h2 class="face face_neutral">:l</h2>
+            <h3>Lazy/Unmotivated</h3>
+            <p>
+                Some days, it's hard to find energy or purpose. You might feel stuck, tired, or unsure of what to do next. 
+                But even when your motivation fades, God's purpose for you does not. 
+                He is still working in you, shaping your heart, and leading you forward — even in the quiet seasons.
+            </p>
+
+            <blockquote style="
+                background-color: #E5E5E5;
+                border-left: 6px solid #707371;
+                padding: 15px;
+                margin: 25px auto;
+                width: 80%;
+                border-radius: 10px;
+                font-style: italic;
+                color: #303030;
+            ">
+                "He who began a good work in you will carry it on to completion until the day of Christ Jesus." , 
+                <strong>Philippians 1:6</strong>
+            </blockquote>
+
+            <div style="
+                background-color: #F5F5F5;
+                border: 1px solid #C0C0C0;
+                border-radius: 12px;
+                padding: 15px;
+                margin: 0 auto 25px auto;
+                width: 80%;
+                color: #303030;
+            ">
+                <p>
+                    This verse reminds you that even when you feel unmotivated, God's work in your life continues. 
+                    You don't have to rely on your own strength to keep going — His Spirit gives you the desire and power to act. 
+                    Every small step forward, even when it feels insignificant, is part of something bigger. 
+                    God hasn't forgotten your purpose, and He won't stop until it's complete.
+                </p>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button id="moreLazy">How can I find motivation again?</button>
+                <button id="backHome">← Back to Mood Picker</button>
+            </div>
+
+            <div id="lazyOutput" class="hidden" style="margin-top: 20px;">
+                <h4>Ways to rekindle motivation:</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>🙏 Pray for renewed energy and focus — ask God to guide your next step</li>
+                    <li>📖 Read Philippians 4:13 or Isaiah 40:31 for encouragement</li>
+                    <li>🕊️ Start small — one simple act of progress can restart your momentum</li>
+                    <li>💬 Talk with someone who inspires or uplifts you</li>
+                    <li>🌤️ Remember that God's pace is gentle — progress doesn't have to be perfect</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            const lazyButton = document.getElementById("moreLazy");
+            const output = document.getElementById("lazyOutput");
+            const backHome = document.getElementById("backHome");
+
+            lazyButton.addEventListener("click", () => {
+                // Reveal permanently
+                output.classList.remove("hidden");
+                lazyButton.disabled = true;
+            });
+
+            backHome.addEventListener("click", () => {
+                window.location.href = "ecamp.html";
+            });
+        </script>
+    </body>
+</html>

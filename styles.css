@@ -1,0 +1,161 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Hepta Slab", serif;
+}
+
+/* Navigation */
+nav.titleSlogan {
+    background-color: #d7ccc8;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav.titleSlogan .brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #3e2723;
+    margin: 0;
+}
+
+nav.titleSlogan p {
+    margin: 0;
+    font-style: italic;
+    color: #5d4037;
+}
+
+/* Main Container */
+.searcher {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.searcher h3 {
+    font-size: 1.6rem;
+    color: #4e342e;
+    margin-bottom: 20px;
+}
+
+/* Mood Sections */
+.moods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+}
+
+.moods_positive,
+.moods_neutral,
+.moods_negative {
+    justify-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.moods_positive:hover,
+.moods_neutral:hover,
+.moods_negative:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Faces */
+.face {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.face_positive {
+    color: #EAB881;
+}
+
+.face_neutral {
+    color: #707371;
+}
+
+.face_negative {
+    color: #CE93D8;
+}
+
+/* Buttons */
+button {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Color Themes */
+.moods_positive {
+    background-color: #FFF9C4; /* soft yellow */
+}
+
+.moods_positive button {
+    background-color: #FFE082; /* soft yellow */
+}
+
+.moods_neutral {
+    background-color: #E0E0E0;
+}
+
+.moods_negative {
+    background-color: #E1BEE7;
+}
+
+.moods_negative button {
+    background-color: #CE93D8;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .moods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moods_positive,
+    .moods_neutral,
+    .moods_negative {
+        width: 80%;
+    }
+}

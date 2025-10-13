@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodview - Okay</title>
+        <link rel="stylesheet" href="ecamp.css">
+    </head>
+    <body>
+        <nav class="titleSlogan">
+            <h1 class="brand">Moodview</h1>
+            <p>Your mood in a different view.</p>
+        </nav>
+
+        <div class="moods_neutral" style="text-align: center;">
+            <h2 class="face face_neutral">:|</h2>
+            <h3>Feeling Okay</h3>
+            <p>
+                Sometimes life feels steady — not too high, not too low — and that's perfectly fine. 
+                Being okay doesn't mean you lack emotion, it means you're learning balance. 
+                It's the quiet space between joy and sadness where gratitude can grow. 
+                Even in ordinary days, there is grace in the simple things, and peace in knowing that God is still at work.
+            </p>
+
+            <blockquote style="
+                background-color: #E5E5E5;
+                border-left: 6px solid #707371;
+                padding: 15px;
+                margin: 25px auto;
+                width: 80%;
+                border-radius: 10px;
+                font-style: italic;
+                color: #303030;
+            ">
+                "I have learned to be content whatever the circumstances." , 
+                <strong>Philippians 4:11</strong>
+            </blockquote>
+
+            <div style="
+                background-color: #F5F5F5;
+                border: 1px solid #C0C0C0;
+                border-radius: 12px;
+                padding: 15px;
+                margin: 0 auto 25px auto;
+                width: 80%;
+                color: #303030;
+            ">
+                <p>
+                    This verse is a gentle reminder that peace and contentment aren't about everything going right, 
+                    but about trusting God in every situation. 
+                    Even on average days, when nothing feels special, there is beauty in simplicity. 
+                    God is present in your routines, your thoughts, and your quiet moments. 
+                    Being okay is a sign that your heart is resting where it belongs — in His care.
+                </p>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button id="moreOkay">How can I stay content?</button>
+                <button id="backHome">← Back to Mood Picker</button>
+            </div>
+
+            <div id="okayOutput" class="hidden" style="margin-top: 20px; text-align: center;">
+                <h4>Ways to nurture calm and contentment:</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>☁️ Take a few minutes to breathe and thank God for today</li>
+                    <li>🕊️ Reflect on small blessings that often go unnoticed</li>
+                    <li>📖 Read a short devotion or verse that centers your heart</li>
+                    <li>🤍 Do something simple that makes you smile</li>
+                    <li>🙏 End your day by thanking God for the quiet peace of “okay”</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            const okayButton = document.getElementById("moreOkay");
+            const output = document.getElementById("okayOutput");
+            const backHome = document.getElementById("backHome");
+
+            okayButton.addEventListener("click", () => {
+                output.classList.remove("hidden");
+                okayButton.disabled = true;
+            });
+
+            backHome.addEventListener("click", () => {
+                window.location.href = "ecamp.html";
+            });
+        </script>
+    </body>
+</html>

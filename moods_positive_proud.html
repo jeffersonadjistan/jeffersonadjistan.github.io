@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodview - Proud</title>
+        <link rel="stylesheet" href="ecamp.css">
+    </head>
+    <body>
+        <nav class="titleSlogan">
+            <h1 class="brand">Moodview</h1>
+            <p>Your mood in a different view.</p>
+        </nav>
+
+        <div class="moods_positive" style="text-align: center;">
+            <h2 class="face face_positive">:D</h2>
+            <h3>Proud</h3>
+            <p>
+                Proud means recognizing how far you've come and how much you've grown.
+                It's not about boasting or comparing, rather it's about being grateful for the progress you've made 
+                and giving glory to God for guiding your journey. Healthy pride celebrates perseverance, effort,
+                and the lessons learned along the way.
+            </p>
+
+            <blockquote style="
+                background-color: #FFE082;
+                border-left: 6px solid #EAB881;
+                padding: 15px;
+                margin: 25px auto;
+                width: 80%;
+                border-radius: 10px;
+                font-style: italic;
+                color: #5b4e2b;
+            ">
+                “But let the one who boasts boast in the Lord.” — <strong>2 Corinthians 10:17</strong>
+            </blockquote>
+            <div style="
+                background-color: #FFF8E1;
+                border: 1px solid #EAB881;
+                border-radius: 12px;
+                padding: 15px;
+                margin: 0 auto 25px auto;
+                width: 80%;
+                color: #5b4e2b;
+            ">
+                <p>
+                This verse reminds us that while it’s good to take joy in our achievements, 
+                all true success and strength come from God. When we give Him the credit, 
+                our pride becomes humble confidence instead of arrogance. 
+                Being proud in the Lord means standing tall in who He made us to be — 
+                capable, resilient, and loved — while remembering that everything good in us 
+                flows from His grace.
+                </p>
+            </div>
+            <div style="margin-top: 20px;">
+                <button id="moreProud">How can I grow in gratitude?</button>
+                <button id="backHome">← Back to Mood Picker</button>
+            </div>
+            <div id="proudOutput" class="hidden" style="margin-top: 20px; text-align: center;">
+            <h4>Ways to stay grounded in gratitude:</h4>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>🙌 Thank God daily for your strengths and opportunities</li>
+                <li>🤝 Celebrate others' accomplishments with joy rather than not caring</li>
+                <li>📖 Reflect on how God helped you overcome challenges</li>
+                <li>💬 Use your story to encourage and inspire others</li>
+            </ul>
+            </div>
+        </div>
+        <script>
+            const proudButton = document.getElementById("moreProud");
+            const output = document.getElementById("proudOutput");
+            const backHome = document.getElementById("backHome");
+
+            proudButton.addEventListener("click", () => {
+                output.classList.remove("hidden");
+                proudButton.disabled = true;
+            });
+
+            backHome.addEventListener("click", () => {
+                window.location.href = "ecamp.html";
+            });
+        </script>
+    </body>
+</html>

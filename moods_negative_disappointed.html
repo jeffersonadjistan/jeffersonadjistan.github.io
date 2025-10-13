@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodview - Disappointed</title>
+        <link rel="stylesheet" href="ecamp.css">
+    </head>
+    <body>
+        <nav class="titleSlogan">
+            <h1 class="brand">Moodview</h1>
+            <p>Your mood in a different view.</p>
+        </nav>
+
+        <div class="moods_negative" style="text-align: center;">
+            <h2 class="face face_negative">:(</h2>
+            <h3>Feeling Disappointed</h3>
+            <p>
+                Disappointment can feel heavy — when something you hoped for doesn't happen, 
+                or when someone lets you down. It's okay to feel sad or frustrated. 
+                Even in these moments, God understands your pain. 
+                He doesn't waste your disappointment — He uses it to grow your faith, 
+                strengthen your patience, and lead you to something better.
+            </p>
+
+            <blockquote style="
+                background-color: #CE93D8;
+                border-left: 6px solid #9C4D97;
+                padding: 15px;
+                margin: 25px auto;
+                width: 80%;
+                border-radius: 10px;
+                font-style: italic;
+                color: #3d2a46;
+            ">
+                "The righteous cry out, and the Lord hears them; He delivers them from all their troubles. 
+                The Lord is close to the brokenhearted and saves those who are crushed in spirit." , 
+                <strong>Psalm 34:17–18</strong>
+            </blockquote>
+
+            <div style="
+                background-color: #F3E5F5;
+                border: 1px solid #CE93D8;
+                border-radius: 12px;
+                padding: 15px;
+                margin: 0 auto 25px auto;
+                width: 80%;
+                color: #3d2a46;
+            ">
+                <p>
+                    This verse reminds us that God is near when we feel let down. 
+                    Even when prayers seem unanswered, He is still working behind the scenes 
+                    for your good. Disappointment doesn't mean defeat — it means God has 
+                    something different, and often better, in store. Trust His timing, 
+                    and let your hope rest in His faithfulness.
+                </p>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button id="moreDisappointed">How can I find hope again?</button>
+                <button id="backHome">← Back to Mood Picker</button>
+            </div>
+
+            <div id="disappointedOutput" class="hidden" style="margin-top: 20px;">
+                <h4>Ways to turn disappointment into hope:</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>🙏 Talk to God honestly about what didn't go as planned</li>
+                    <li>📖 Read Psalms of comfort and trust, like Psalm 42 or 46</li>
+                    <li>💬 Share your feelings with someone who encourages your faith</li>
+                    <li>🌤️ Remember past times God turned pain into purpose</li>
+                    <li>💗 Pray for peace and ask God to show you His better plan</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            const disappointedButton = document.getElementById("moreDisappointed");
+            const output = document.getElementById("disappointedOutput");
+            const backHome = document.getElementById("backHome");
+
+            disappointedButton.addEventListener("click", () => {
+                // Reveal permanently
+                output.classList.remove("hidden");
+                disappointedButton.disabled = true;
+            });
+
+            backHome.addEventListener("click", () => {
+                window.location.href = "ecamp.html";
+            });
+        </script>
+    </body>
+</html>
