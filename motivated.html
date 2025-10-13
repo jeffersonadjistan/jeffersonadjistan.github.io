@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodview - Motivated</title>
+        <link rel="stylesheet" href="ecamp.css">
+    </head>
+    <body>
+        <nav>
+            <h1 class="brand">Moodview</h1>
+            <p>Your mood in a different view.</p>
+        </nav>
+
+        <div class="moods_positive" style="text-align: center;">
+            <h2 class="face face_positive">:)</h2>
+            <h3>Motivated</h3>
+            <p>
+                That's amazing! Motivation is the fire that keeps you moving toward your goals, 
+                It's the energy to grow, to try again, and to keep believing that your efforts matter. 
+                True motivation doesn't just come from excitement, it comes from purpose, discipline, 
+                and the faith that God is working through every step you take. 
+                When your drive comes from Him, your strength never runs out.
+            </p>
+
+            <blockquote style="
+                background-color: #FFE082;
+                border-left: 6px solid #EAB881;
+                padding: 15px;
+                margin: 25px auto;
+                width: 80%;
+                border-radius: 10px;
+                font-style: italic;
+                color: #5b4e2b;
+            ">
+                "I can do all things through Christ who strengthens me." , 
+                <strong>Philippians 4:13</strong>
+            </blockquote>
+
+            <div style="
+                background-color: #FFF8E1;
+                border: 1px solid #EAB881;
+                border-radius: 12px;
+                padding: 15px;
+                margin: 0 auto 25px auto;
+                width: 80%;
+                color: #5b4e2b;
+            ">
+                <p>
+                    This verse is a powerful reminder that real motivation isn't just self-driven, 
+                    it's God-powered. When your confidence is rooted in Him, 
+                    you find the courage to face challenges, the patience to keep going, 
+                    and the humility to give Him the glory for every victory. 
+                    Let your motivation come from gratitude, faith, and a heart willing to serve.
+                </p>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button id="moreMotivated">How can I stay motivated?</button>
+                <button id="backHome">← Back to Mood Picker</button>
+            </div>
+
+            <div id="motivatedOutput" class="hidden" style="margin-top: 20px; text-align: center;">
+                <h4>Ways to stay inspired and driven:</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>💪 Start your day with a short prayer for strength and focus</li>
+                    <li>🗓️ Set small, meaningful goals and thank God for progress</li>
+                    <li>🎧 Listen to worship or uplifting music while you work</li>
+                    <li>🕊️ Take breaks to rest and realign with your purpose</li>
+                    <li>📖 Read verses or devotionals that encourage perseverance</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            const motivatedButton = document.getElementById("moreMotivated");
+            const output = document.getElementById("motivatedOutput");
+            const backHome = document.getElementById("backHome");
+
+            motivatedButton.addEventListener("click", () => {
+                output.classList.remove("hidden");
+                motivatedButton.disabled = true;
+            });
+
+            backHome.addEventListener("click", () => {
+                window.location.href = "ecamp.html";
+            });
+        </script>
+    </body>
+</html>
